@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E9FF8B60433E52238E8D8A4 /* Pods_mingjieloan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBAB3B4865752B3E365A667 /* Pods_mingjieloan.framework */; };
+		9969969C1E0A257C00CEF850 /* XXColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9969969B1E0A257C00CEF850 /* XXColor.m */; };
+		996996A01E0A2F7200CEF850 /* VVNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9969969F1E0A2F7200CEF850 /* VVNetWorkTool.m */; };
+		C328FDFF1E09259B00F541FA /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328FDFE1E09259B00F541FA /* AFNetworking.framework */; };
+		C328FE021E09282F00F541FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C328FE011E09282F00F541FA /* Assets.xcassets */; };
+		C328FE041E0928D000F541FA /* XXXXXXXXXXX.png in Resources */ = {isa = PBXBuildFile; fileRef = C328FE031E0928D000F541FA /* XXXXXXXXXXX.png */; };
+		C34FFEAA1E0914CA00FF8C05 /* mingjieloanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFEA91E0914CA00FF8C05 /* mingjieloanTests.m */; };
+		C34FFEB51E0914CA00FF8C05 /* mingjieloanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFEB41E0914CA00FF8C05 /* mingjieloanUITests.m */; };
+		C34FFF241E091E8D00FF8C05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFEF41E091E8D00FF8C05 /* AppDelegate.m */; };
+		C34FFF261E091E8D00FF8C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34FFEF61E091E8D00FF8C05 /* LaunchScreen.storyboard */; };
+		C34FFF271E091E8D00FF8C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34FFEF81E091E8D00FF8C05 /* Main.storyboard */; };
+		C34FFF281E091E8D00FF8C05 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFEFD1E091E8D00FF8C05 /* BaseViewController.m */; };
+		C34FFF291E091E8D00FF8C05 /* SubBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFEFF1E091E8D00FF8C05 /* SubBaseViewController.m */; };
+		C34FFF2A1E091E8D00FF8C05 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFF021E091E8D00FF8C05 /* BaseModel.m */; };
+		C34FFF2B1E091E8D00FF8C05 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C34FFF041E091E8D00FF8C05 /* Info.plist */; };
+		C34FFF2C1E091E8D00FF8C05 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFF071E091E8D00FF8C05 /* LoginViewController.m */; };
+		C34FFF2D1E091E8D00FF8C05 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFF091E091E8D00FF8C05 /* RegisterViewController.m */; };
+		C34FFF2E1E091E8D00FF8C05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFF0A1E091E8D00FF8C05 /* main.m */; };
+		C34FFF2F1E091E8D00FF8C05 /* MoreInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFF131E091E8D00FF8C05 /* MoreInfoViewController.m */; };
+		C34FFF301E091E8D00FF8C05 /* MyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFF191E091E8D00FF8C05 /* MyAccountViewController.m */; };
+		C34FFF311E091E8D00FF8C05 /* ProductCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFF201E091E8D00FF8C05 /* ProductCenterViewController.m */; };
+		FBC856F2F528C582AE374F05 /* Pods_mingjieloanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78136D54AFFD20F4F0C6D733 /* Pods_mingjieloanTests.framework */; };
+		FFA52CCCA8332BE7F165AFD3 /* Pods_mingjieloanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27772DFC1AA86771D77D694 /* Pods_mingjieloanUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C34FFEA61E0914CA00FF8C05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C34FFE841E0914C900FF8C05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C34FFE8B1E0914CA00FF8C05;
+			remoteInfo = mingjieloan;
+		};
+		C34FFEB11E0914CA00FF8C05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C34FFE841E0914C900FF8C05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C34FFE8B1E0914CA00FF8C05;
+			remoteInfo = mingjieloan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A76CC3E42835EA1D2C3A4D /* Pods-mingjieloan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mingjieloan.release.xcconfig"; path = "Pods/Target Support Files/Pods-mingjieloan/Pods-mingjieloan.release.xcconfig"; sourceTree = "<group>"; };
+		26881E88DCFA1D6C6A4F40A0 /* Pods-mingjieloan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mingjieloan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mingjieloan/Pods-mingjieloan.debug.xcconfig"; sourceTree = "<group>"; };
+		4E1407C00339397825BA70F6 /* Pods-mingjieloanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mingjieloanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mingjieloanUITests/Pods-mingjieloanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		78136D54AFFD20F4F0C6D733 /* Pods_mingjieloanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mingjieloanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BEC8869677B5FDC1106F1A1 /* Pods-mingjieloanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mingjieloanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mingjieloanTests/Pods-mingjieloanTests.release.xcconfig"; sourceTree = "<group>"; };
+		9969969A1E0A257C00CEF850 /* XXColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXColor.h; sourceTree = "<group>"; };
+		9969969B1E0A257C00CEF850 /* XXColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXColor.m; sourceTree = "<group>"; };
+		9969969E1E0A2F7200CEF850 /* VVNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VVNetWorkTool.h; path = VVNetWork/VVNetWorkTool.h; sourceTree = "<group>"; };
+		9969969F1E0A2F7200CEF850 /* VVNetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VVNetWorkTool.m; path = VVNetWork/VVNetWorkTool.m; sourceTree = "<group>"; };
+		9BBAB3B4865752B3E365A667 /* Pods_mingjieloan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mingjieloan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C328FDFE1E09259B00F541FA /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../Library/Developer/Xcode/DerivedData/mingjieloan-cawitpiheydtebhjjrcuuarlexvl/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		C328FE011E09282F00F541FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C328FE031E0928D000F541FA /* XXXXXXXXXXX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XXXXXXXXXXX.png; sourceTree = "<group>"; };
+		C34FFE8C1E0914CA00FF8C05 /* mingjieloan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mingjieloan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C34FFEA51E0914CA00FF8C05 /* mingjieloanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mingjieloanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C34FFEA91E0914CA00FF8C05 /* mingjieloanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mingjieloanTests.m; sourceTree = "<group>"; };
+		C34FFEAB1E0914CA00FF8C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C34FFEB01E0914CA00FF8C05 /* mingjieloanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mingjieloanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C34FFEB41E0914CA00FF8C05 /* mingjieloanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mingjieloanUITests.m; sourceTree = "<group>"; };
+		C34FFEB61E0914CA00FF8C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C34FFEF31E091E8D00FF8C05 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C34FFEF41E091E8D00FF8C05 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C34FFEF71E091E8D00FF8C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C34FFEF91E091E8D00FF8C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C34FFEFC1E091E8D00FF8C05 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C34FFEFD1E091E8D00FF8C05 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		C34FFEFE1E091E8D00FF8C05 /* SubBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubBaseViewController.h; sourceTree = "<group>"; };
+		C34FFEFF1E091E8D00FF8C05 /* SubBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubBaseViewController.m; sourceTree = "<group>"; };
+		C34FFF011E091E8D00FF8C05 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		C34FFF021E091E8D00FF8C05 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		C34FFF041E091E8D00FF8C05 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C34FFF061E091E8D00FF8C05 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C34FFF071E091E8D00FF8C05 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C34FFF081E091E8D00FF8C05 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		C34FFF091E091E8D00FF8C05 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		C34FFF0A1E091E8D00FF8C05 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C34FFF0C1E091E8D00FF8C05 /* ClassHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassHeader.pch; sourceTree = "<group>"; };
+		C34FFF0D1E091E8D00FF8C05 /* Confi&Para.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Confi&Para.pch"; sourceTree = "<group>"; };
+		C34FFF0E1E091E8D00FF8C05 /* Final.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Final.pch; sourceTree = "<group>"; };
+		C34FFF0F1E091E8D00FF8C05 /* UrlManager.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlManager.pch; sourceTree = "<group>"; };
+		C34FFF121E091E8D00FF8C05 /* MoreInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInfoViewController.h; sourceTree = "<group>"; };
+		C34FFF131E091E8D00FF8C05 /* MoreInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfoViewController.m; sourceTree = "<group>"; };
+		C34FFF181E091E8D00FF8C05 /* MyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccountViewController.h; sourceTree = "<group>"; };
+		C34FFF191E091E8D00FF8C05 /* MyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccountViewController.m; sourceTree = "<group>"; };
+		C34FFF1F1E091E8D00FF8C05 /* ProductCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCenterViewController.h; sourceTree = "<group>"; };
+		C34FFF201E091E8D00FF8C05 /* ProductCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCenterViewController.m; sourceTree = "<group>"; };
+		D3B12F56096B5F62670A8211 /* Pods-mingjieloanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mingjieloanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mingjieloanUITests/Pods-mingjieloanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F27772DFC1AA86771D77D694 /* Pods_mingjieloanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mingjieloanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7FEC886A258842085C7BA34 /* Pods-mingjieloanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mingjieloanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mingjieloanTests/Pods-mingjieloanTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C34FFE891E0914CA00FF8C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C328FDFF1E09259B00F541FA /* AFNetworking.framework in Frameworks */,
+				7E9FF8B60433E52238E8D8A4 /* Pods_mingjieloan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34FFEA21E0914CA00FF8C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC856F2F528C582AE374F05 /* Pods_mingjieloanTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34FFEAD1E0914CA00FF8C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA52CCCA8332BE7F165AFD3 /* Pods_mingjieloanUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40958A113D839F556D4D70E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26881E88DCFA1D6C6A4F40A0 /* Pods-mingjieloan.debug.xcconfig */,
+				00A76CC3E42835EA1D2C3A4D /* Pods-mingjieloan.release.xcconfig */,
+				F7FEC886A258842085C7BA34 /* Pods-mingjieloanTests.debug.xcconfig */,
+				8BEC8869677B5FDC1106F1A1 /* Pods-mingjieloanTests.release.xcconfig */,
+				4E1407C00339397825BA70F6 /* Pods-mingjieloanUITests.debug.xcconfig */,
+				D3B12F56096B5F62670A8211 /* Pods-mingjieloanUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		531622B905DFF28749ECDE05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C328FDFE1E09259B00F541FA /* AFNetworking.framework */,
+				9BBAB3B4865752B3E365A667 /* Pods_mingjieloan.framework */,
+				78136D54AFFD20F4F0C6D733 /* Pods_mingjieloanTests.framework */,
+				F27772DFC1AA86771D77D694 /* Pods_mingjieloanUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		996996991E0A257C00CEF850 /* ZZColor */ = {
+			isa = PBXGroup;
+			children = (
+				9969969A1E0A257C00CEF850 /* XXColor.h */,
+				9969969B1E0A257C00CEF850 /* XXColor.m */,
+			);
+			path = ZZColor;
+			sourceTree = "<group>";
+		};
+		9969969D1E0A2EF400CEF850 /* VVNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				9969969E1E0A2F7200CEF850 /* VVNetWorkTool.h */,
+				9969969F1E0A2F7200CEF850 /* VVNetWorkTool.m */,
+			);
+			name = VVNetWork;
+			sourceTree = "<group>";
+		};
+		C34FFE831E0914C900FF8C05 = {
+			isa = PBXGroup;
+			children = (
+				C34FFEF21E091E8D00FF8C05 /* mingjieloan */,
+				C34FFEA81E0914CA00FF8C05 /* mingjieloanTests */,
+				C34FFEB31E0914CA00FF8C05 /* mingjieloanUITests */,
+				C34FFE8D1E0914CA00FF8C05 /* Products */,
+				40958A113D839F556D4D70E6 /* Pods */,
+				531622B905DFF28749ECDE05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C34FFE8D1E0914CA00FF8C05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFE8C1E0914CA00FF8C05 /* mingjieloan.app */,
+				C34FFEA51E0914CA00FF8C05 /* mingjieloanTests.xctest */,
+				C34FFEB01E0914CA00FF8C05 /* mingjieloanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C34FFEA81E0914CA00FF8C05 /* mingjieloanTests */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFEA91E0914CA00FF8C05 /* mingjieloanTests.m */,
+				C34FFEAB1E0914CA00FF8C05 /* Info.plist */,
+			);
+			path = mingjieloanTests;
+			sourceTree = "<group>";
+		};
+		C34FFEB31E0914CA00FF8C05 /* mingjieloanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFEB41E0914CA00FF8C05 /* mingjieloanUITests.m */,
+				C34FFEB61E0914CA00FF8C05 /* Info.plist */,
+			);
+			path = mingjieloanUITests;
+			sourceTree = "<group>";
+		};
+		C34FFEF21E091E8D00FF8C05 /* mingjieloan */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFEF31E091E8D00FF8C05 /* AppDelegate.h */,
+				C34FFEF41E091E8D00FF8C05 /* AppDelegate.m */,
+				C328FE011E09282F00F541FA /* Assets.xcassets */,
+				C34FFEF61E091E8D00FF8C05 /* LaunchScreen.storyboard */,
+				C34FFEF81E091E8D00FF8C05 /* Main.storyboard */,
+				C34FFF041E091E8D00FF8C05 /* Info.plist */,
+				C34FFF0A1E091E8D00FF8C05 /* main.m */,
+				C34FFEFA1E091E8D00FF8C05 /* BaseClass */,
+				C34FFF051E091E8D00FF8C05 /* Log&Res */,
+				C34FFF1D1E091E8D00FF8C05 /* ProductCenter */,
+				C34FFF161E091E8D00FF8C05 /* MyAccount */,
+				C34FFF101E091E8D00FF8C05 /* MoreInfo */,
+				C34FFF0B1E091E8D00FF8C05 /* Manager */,
+				C34FFF231E091E8D00FF8C05 /* Tools */,
+				C34FFF1C1E091E8D00FF8C05 /* Pictures */,
+			);
+			path = mingjieloan;
+			sourceTree = "<group>";
+		};
+		C34FFEFA1E091E8D00FF8C05 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFEFB1E091E8D00FF8C05 /* BaseController */,
+				C34FFF001E091E8D00FF8C05 /* BaseModel */,
+				C34FFF031E091E8D00FF8C05 /* BaseView */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		C34FFEFB1E091E8D00FF8C05 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFEFC1E091E8D00FF8C05 /* BaseViewController.h */,
+				C34FFEFD1E091E8D00FF8C05 /* BaseViewController.m */,
+				C34FFEFE1E091E8D00FF8C05 /* SubBaseViewController.h */,
+				C34FFEFF1E091E8D00FF8C05 /* SubBaseViewController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		C34FFF001E091E8D00FF8C05 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFF011E091E8D00FF8C05 /* BaseModel.h */,
+				C34FFF021E091E8D00FF8C05 /* BaseModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		C34FFF031E091E8D00FF8C05 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		C34FFF051E091E8D00FF8C05 /* Log&Res */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFF061E091E8D00FF8C05 /* LoginViewController.h */,
+				C34FFF071E091E8D00FF8C05 /* LoginViewController.m */,
+				C34FFF081E091E8D00FF8C05 /* RegisterViewController.h */,
+				C34FFF091E091E8D00FF8C05 /* RegisterViewController.m */,
+			);
+			path = "Log&Res";
+			sourceTree = "<group>";
+		};
+		C34FFF0B1E091E8D00FF8C05 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFF0C1E091E8D00FF8C05 /* ClassHeader.pch */,
+				C34FFF0D1E091E8D00FF8C05 /* Confi&Para.pch */,
+				C34FFF0E1E091E8D00FF8C05 /* Final.pch */,
+				C34FFF0F1E091E8D00FF8C05 /* UrlManager.pch */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		C34FFF101E091E8D00FF8C05 /* MoreInfo */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFF111E091E8D00FF8C05 /* Controller */,
+				C34FFF141E091E8D00FF8C05 /* Model */,
+				C34FFF151E091E8D00FF8C05 /* View */,
+			);
+			path = MoreInfo;
+			sourceTree = "<group>";
+		};
+		C34FFF111E091E8D00FF8C05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFF121E091E8D00FF8C05 /* MoreInfoViewController.h */,
+				C34FFF131E091E8D00FF8C05 /* MoreInfoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C34FFF141E091E8D00FF8C05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C34FFF151E091E8D00FF8C05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C34FFF161E091E8D00FF8C05 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFF171E091E8D00FF8C05 /* Controller */,
+				C34FFF1A1E091E8D00FF8C05 /* Model */,
+				C34FFF1B1E091E8D00FF8C05 /* View */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		C34FFF171E091E8D00FF8C05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFF181E091E8D00FF8C05 /* MyAccountViewController.h */,
+				C34FFF191E091E8D00FF8C05 /* MyAccountViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C34FFF1A1E091E8D00FF8C05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C34FFF1B1E091E8D00FF8C05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C34FFF1C1E091E8D00FF8C05 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				C328FE031E0928D000F541FA /* XXXXXXXXXXX.png */,
+			);
+			path = Pictures;
+			sourceTree = "<group>";
+		};
+		C34FFF1D1E091E8D00FF8C05 /* ProductCenter */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFF1E1E091E8D00FF8C05 /* Controller */,
+				C34FFF211E091E8D00FF8C05 /* Model */,
+				C34FFF221E091E8D00FF8C05 /* View */,
+			);
+			path = ProductCenter;
+			sourceTree = "<group>";
+		};
+		C34FFF1E1E091E8D00FF8C05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C34FFF1F1E091E8D00FF8C05 /* ProductCenterViewController.h */,
+				C34FFF201E091E8D00FF8C05 /* ProductCenterViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C34FFF211E091E8D00FF8C05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C34FFF221E091E8D00FF8C05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C34FFF231E091E8D00FF8C05 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9969969D1E0A2EF400CEF850 /* VVNetWork */,
+				996996991E0A257C00CEF850 /* ZZColor */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C34FFE8B1E0914CA00FF8C05 /* mingjieloan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C34FFEB91E0914CA00FF8C05 /* Build configuration list for PBXNativeTarget "mingjieloan" */;
+			buildPhases = (
+				E41829B0973E2534FC868A24 /* [CP] Check Pods Manifest.lock */,
+				C34FFE881E0914CA00FF8C05 /* Sources */,
+				C34FFE891E0914CA00FF8C05 /* Frameworks */,
+				C34FFE8A1E0914CA00FF8C05 /* Resources */,
+				262E2C49A9C5F5F3A5E43E36 /* [CP] Embed Pods Frameworks */,
+				F28F0A4673753B728A6DF3AB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mingjieloan;
+			productName = mingjieloan;
+			productReference = C34FFE8C1E0914CA00FF8C05 /* mingjieloan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C34FFEA41E0914CA00FF8C05 /* mingjieloanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C34FFEBC1E0914CA00FF8C05 /* Build configuration list for PBXNativeTarget "mingjieloanTests" */;
+			buildPhases = (
+				2F1B307CBA427F40C56CB5F4 /* [CP] Check Pods Manifest.lock */,
+				C34FFEA11E0914CA00FF8C05 /* Sources */,
+				C34FFEA21E0914CA00FF8C05 /* Frameworks */,
+				C34FFEA31E0914CA00FF8C05 /* Resources */,
+				7E9178E3190F3532D6B977FF /* [CP] Embed Pods Frameworks */,
+				A140541027C09C5011FB8235 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C34FFEA71E0914CA00FF8C05 /* PBXTargetDependency */,
+			);
+			name = mingjieloanTests;
+			productName = mingjieloanTests;
+			productReference = C34FFEA51E0914CA00FF8C05 /* mingjieloanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C34FFEAF1E0914CA00FF8C05 /* mingjieloanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C34FFEBF1E0914CA00FF8C05 /* Build configuration list for PBXNativeTarget "mingjieloanUITests" */;
+			buildPhases = (
+				20466B1CE1199326D43A1E3D /* [CP] Check Pods Manifest.lock */,
+				C34FFEAC1E0914CA00FF8C05 /* Sources */,
+				C34FFEAD1E0914CA00FF8C05 /* Frameworks */,
+				C34FFEAE1E0914CA00FF8C05 /* Resources */,
+				1DCC607C01031902629D3C5A /* [CP] Embed Pods Frameworks */,
+				B3092A16712B4AAC7BAE778C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C34FFEB21E0914CA00FF8C05 /* PBXTargetDependency */,
+			);
+			name = mingjieloanUITests;
+			productName = mingjieloanUITests;
+			productReference = C34FFEB01E0914CA00FF8C05 /* mingjieloanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C34FFE841E0914C900FF8C05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = mingjie;
+				TargetAttributes = {
+					C34FFE8B1E0914CA00FF8C05 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					C34FFEA41E0914CA00FF8C05 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C34FFE8B1E0914CA00FF8C05;
+					};
+					C34FFEAF1E0914CA00FF8C05 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C34FFE8B1E0914CA00FF8C05;
+					};
+				};
+			};
+			buildConfigurationList = C34FFE871E0914C900FF8C05 /* Build configuration list for PBXProject "mingjieloan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C34FFE831E0914C900FF8C05;
+			productRefGroup = C34FFE8D1E0914CA00FF8C05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C34FFE8B1E0914CA00FF8C05 /* mingjieloan */,
+				C34FFEA41E0914CA00FF8C05 /* mingjieloanTests */,
+				C34FFEAF1E0914CA00FF8C05 /* mingjieloanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C34FFE8A1E0914CA00FF8C05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C328FE041E0928D000F541FA /* XXXXXXXXXXX.png in Resources */,
+				C34FFF2B1E091E8D00FF8C05 /* Info.plist in Resources */,
+				C328FE021E09282F00F541FA /* Assets.xcassets in Resources */,
+				C34FFF271E091E8D00FF8C05 /* Main.storyboard in Resources */,
+				C34FFF261E091E8D00FF8C05 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34FFEA31E0914CA00FF8C05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34FFEAE1E0914CA00FF8C05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DCC607C01031902629D3C5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mingjieloanUITests/Pods-mingjieloanUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20466B1CE1199326D43A1E3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		262E2C49A9C5F5F3A5E43E36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mingjieloan/Pods-mingjieloan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F1B307CBA427F40C56CB5F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E9178E3190F3532D6B977FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mingjieloanTests/Pods-mingjieloanTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A140541027C09C5011FB8235 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mingjieloanTests/Pods-mingjieloanTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3092A16712B4AAC7BAE778C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mingjieloanUITests/Pods-mingjieloanUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E41829B0973E2534FC868A24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F28F0A4673753B728A6DF3AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mingjieloan/Pods-mingjieloan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C34FFE881E0914CA00FF8C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C34FFF291E091E8D00FF8C05 /* SubBaseViewController.m in Sources */,
+				C34FFF2F1E091E8D00FF8C05 /* MoreInfoViewController.m in Sources */,
+				C34FFF2D1E091E8D00FF8C05 /* RegisterViewController.m in Sources */,
+				C34FFF241E091E8D00FF8C05 /* AppDelegate.m in Sources */,
+				C34FFF2A1E091E8D00FF8C05 /* BaseModel.m in Sources */,
+				9969969C1E0A257C00CEF850 /* XXColor.m in Sources */,
+				996996A01E0A2F7200CEF850 /* VVNetWorkTool.m in Sources */,
+				C34FFF311E091E8D00FF8C05 /* ProductCenterViewController.m in Sources */,
+				C34FFF281E091E8D00FF8C05 /* BaseViewController.m in Sources */,
+				C34FFF2E1E091E8D00FF8C05 /* main.m in Sources */,
+				C34FFF2C1E091E8D00FF8C05 /* LoginViewController.m in Sources */,
+				C34FFF301E091E8D00FF8C05 /* MyAccountViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34FFEA11E0914CA00FF8C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C34FFEAA1E0914CA00FF8C05 /* mingjieloanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34FFEAC1E0914CA00FF8C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C34FFEB51E0914CA00FF8C05 /* mingjieloanUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C34FFEA71E0914CA00FF8C05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C34FFE8B1E0914CA00FF8C05 /* mingjieloan */;
+			targetProxy = C34FFEA61E0914CA00FF8C05 /* PBXContainerItemProxy */;
+		};
+		C34FFEB21E0914CA00FF8C05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C34FFE8B1E0914CA00FF8C05 /* mingjieloan */;
+			targetProxy = C34FFEB11E0914CA00FF8C05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C34FFEF61E091E8D00FF8C05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C34FFEF71E091E8D00FF8C05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C34FFEF81E091E8D00FF8C05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C34FFEF91E091E8D00FF8C05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C34FFEB71E0914CA00FF8C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C34FFEB81E0914CA00FF8C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C34FFEBA1E0914CA00FF8C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26881E88DCFA1D6C6A4F40A0 /* Pods-mingjieloan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/mingjieloan/Manager/Final.pch";
+				INFOPLIST_FILE = mingjieloan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mingjie.mingjieloan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Debug;
+		};
+		C34FFEBB1E0914CA00FF8C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A76CC3E42835EA1D2C3A4D /* Pods-mingjieloan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/mingjieloan/Manager/Final.pch";
+				INFOPLIST_FILE = mingjieloan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mingjie.mingjieloan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Release;
+		};
+		C34FFEBD1E0914CA00FF8C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7FEC886A258842085C7BA34 /* Pods-mingjieloanTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = mingjieloanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mingjie.mingjieloanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mingjieloan.app/mingjieloan";
+			};
+			name = Debug;
+		};
+		C34FFEBE1E0914CA00FF8C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BEC8869677B5FDC1106F1A1 /* Pods-mingjieloanTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = mingjieloanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mingjie.mingjieloanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mingjieloan.app/mingjieloan";
+			};
+			name = Release;
+		};
+		C34FFEC01E0914CA00FF8C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E1407C00339397825BA70F6 /* Pods-mingjieloanUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = mingjieloanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mingjie.mingjieloanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = mingjieloan;
+			};
+			name = Debug;
+		};
+		C34FFEC11E0914CA00FF8C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B12F56096B5F62670A8211 /* Pods-mingjieloanUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = mingjieloanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mingjie.mingjieloanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = mingjieloan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C34FFE871E0914C900FF8C05 /* Build configuration list for PBXProject "mingjieloan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C34FFEB71E0914CA00FF8C05 /* Debug */,
+				C34FFEB81E0914CA00FF8C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C34FFEB91E0914CA00FF8C05 /* Build configuration list for PBXNativeTarget "mingjieloan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C34FFEBA1E0914CA00FF8C05 /* Debug */,
+				C34FFEBB1E0914CA00FF8C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C34FFEBC1E0914CA00FF8C05 /* Build configuration list for PBXNativeTarget "mingjieloanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C34FFEBD1E0914CA00FF8C05 /* Debug */,
+				C34FFEBE1E0914CA00FF8C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C34FFEBF1E0914CA00FF8C05 /* Build configuration list for PBXNativeTarget "mingjieloanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C34FFEC01E0914CA00FF8C05 /* Debug */,
+				C34FFEC11E0914CA00FF8C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C34FFE841E0914C900FF8C05 /* Project object */;
+}
