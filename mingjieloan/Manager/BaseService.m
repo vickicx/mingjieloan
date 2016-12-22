@@ -10,16 +10,4 @@
 
 @implementation BaseService
 
-
-
-
-
-
-
-
-
-
-
-
-
 @end
