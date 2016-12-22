@@ -9,8 +9,10 @@
 #import "BaseModel.h"
 
 @interface LoginModel : BaseModel<NSCoding>
+
 @property (copy, nonatomic) NSString * sid;
 @property (copy, nonatomic) NSString * uid;
 @property (copy, nonatomic) NSString * username;
+
 + (instancetype)randomDictionary:(NSDictionary *)dictionary;
 @end
