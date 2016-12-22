@@ -22,9 +22,7 @@
      self.navigationItem.title = @"登录";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController.navigationBar setTitleTextAttributes:@{ NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    
-    [self.navigationController.navigationBar setTintColor:[UIColor grayColor]];
-    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+
     [self createView];
 
     // Do any additional setup after loading the view.
