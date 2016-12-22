@@ -39,6 +39,7 @@
 #import "shareSDK-umbrella.h"
 #import "UMSocial.h"
 #import "XXColor.h"
+#import "VVNetWorkTool.h"
 
 
 // Include any system framework and library headers here that should be included in all compilation units.

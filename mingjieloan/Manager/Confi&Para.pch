@@ -23,6 +23,8 @@
 
 #define RealFont(fontValues) [UIFont systemFontOfSize:((fontValues)/414.0f*[UIScreen mainScreen].bounds.size.width)]
 
+#define RealValue(value) ((value)/414.0f*[UIScreen mainScreen].bounds.size.width)
+
 #define RGBColor(r, g, b, a) ([UIColor colorWithRed:r green:g blue:b alpha:a])
 
 #define COLORRGBA(c,a) [UIColor colorWithRed:((c>>16)&0xFF)/255.0	\

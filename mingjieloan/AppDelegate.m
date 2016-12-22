@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
 
 
 @interface AppDelegate ()
@@ -28,8 +29,11 @@
     productNavi.title = @"产品中心";
     
     
-    MyAccountViewController *accountVC = [[MyAccountViewController alloc] init];
-    UINavigationController *accountNavi = [[UINavigationController alloc] initWithRootViewController:accountVC];
+//    MyAccountViewController *accountVC = [[MyAccountViewController alloc] init];
+//    UINavigationController *accountNavi = [[UINavigationController alloc] initWithRootViewController:accountVC];
+    LoginViewController *loginVC = [[LoginViewController alloc] init];
+     UINavigationController *accountNavi = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    
     accountNavi.tabBarItem.image = [[UIImage imageNamed:@"tabX_account"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     accountNavi.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabX_accounted_h"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     accountNavi.title = @"我的账户";

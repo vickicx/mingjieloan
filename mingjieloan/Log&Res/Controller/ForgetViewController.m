@@ -1,18 +1,18 @@
 //
-//  LoginViewController.m
+//  ForgetViewController.m
 //  mingjieloan
 //
-//  Created by vicki on 2016/12/20.
-//  Copyright © 2016年 vicki. All rights reserved.
+//  Created by vicki on 2016/12/21.
+//  Copyright © 2016年 mingjie. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "ForgetViewController.h"
 
-@interface LoginViewController ()
+@interface ForgetViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation ForgetViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
