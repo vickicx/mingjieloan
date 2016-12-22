@@ -179,12 +179,12 @@ typedef NS_ENUM(NSInteger, ResponseRrrorMessage) {
     unknow_error
 };
 
-#define getResponseRrrorMessage (___ResponseRrrorMessage == nil ? ___ResponseRrrorMessage = [[NSArray alloc] initWithObjects:\
+#define getResponseRrrorMessage (ResponseRrrorMessage == nil ? ResponseRrrorMessage = [[NSArray alloc] initWithObjects:\
 @"数据错误,请重试！",\
 @"数据有误,请重试！",\
 @"参数有误！请重试！",\
 @"用户未登录",\
-@"未知错误", nil nil] : ___ResponseRrrorMessage)
+@"未知错误", nil nil] : ResponseRrrorMessage)
 
 
 //如传入network 则返回数据错误,请重试！

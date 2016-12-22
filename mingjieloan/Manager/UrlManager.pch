@@ -13,6 +13,7 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+
 //外网测试地址
 //#define HOSTURL @"http://yanshangkj.f3322.net:5151/mapp"
 //#define ProtocolURL @"http://yanshangkj.f3322.net:5151"
@@ -21,6 +22,10 @@
 //自己的测试地址192.168.1.134
 //#define HOSTURL @"http://192.168.1.151:8080/mapp"
 //#define ProtocolURL @"http://192.168.1.151:8080"
+
+#define Host @"http://www.dlmjcf.com/mapp"
+#define TestHost @"http://www.dlmjcf.com"
+#define Url(string) [NSString stringWithFormat:@"%@/%@", Host, string]
 
 //发布的正式地址
 #define HOSTURL @"http://www.dlmjcf.com/mapp"

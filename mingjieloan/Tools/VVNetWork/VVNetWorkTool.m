@@ -155,6 +155,7 @@
             manager.requestSerializer = [AFJSONRequestSerializer serializer];
             break;
         case BodyTypeString:
+//            manager.requestSerializer = [AFJSONRequestSerializer serializer];
             [manager.requestSerializer setQueryStringSerializationWithBlock:^NSString * _Nonnull(NSURLRequest * _Nonnull request, id  _Nonnull parameters, NSError * _Nullable __autoreleasing * _Nullable error) {
                 return parameters;
             }];
@@ -181,7 +182,7 @@
     }
     
     //5.判断返回值所接收的具体类型
-    [manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain", nil]];
+    [manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain", @"image/jpeg", nil]];
     //6.post请求
     
     NSString *resultStr = url;
