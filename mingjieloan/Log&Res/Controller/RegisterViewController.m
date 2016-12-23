@@ -67,7 +67,11 @@
     self.sendYZMButton.titleLabel.font = [UIFont systemFontOfSize:RealValue(14)];
     
     self.sendYZMButton.backgroundColor = [XXColor btnGoldenColor];
+<<<<<<< HEAD
+    self.sendYZMButton.layer.cornerRadius = 20*FitWidth;
+=======
     self.sendYZMButton.layer.cornerRadius = 20*FitHeight;
+>>>>>>> 012e7dda316457d041ef636364495743aac34f94
     [self.view addSubview:self.sendYZMButton];
     
     
@@ -138,6 +142,7 @@
     self.registerButton.titleLabel.font = [UIFont systemFontOfSize:RealValue(18)];
     self.registerButton.backgroundColor = [XXColor btnGoldenColor];
     [self.view addSubview:self.registerButton];
+     self.nameField.font = self.duanxinField.font = self.passwordField.font = self.passwordAgainField.font = [UIFont systemFontOfSize:RealValue(14)];
 }
 
 - (void)sendYZMButton:(UIButton *)button {
@@ -185,6 +190,7 @@
     
 
 -(void)registerXYButton:(UIButton *)button {
+    
 }
 
 -(void)registerButton:(UIButton *)button{

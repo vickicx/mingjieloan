@@ -16,6 +16,8 @@
 		993422961E0A9AA5004C8A2B /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 993422951E0A9AA5004C8A2B /* BaseService.m */; };
 		9969969C1E0A257C00CEF850 /* XXColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9969969B1E0A257C00CEF850 /* XXColor.m */; };
 		996996A01E0A2F7200CEF850 /* VVNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9969969F1E0A2F7200CEF850 /* VVNetWorkTool.m */; };
+		999691E71E0CB99200DD4395 /* register.htm in Resources */ = {isa = PBXBuildFile; fileRef = 999691E61E0CB99200DD4395 /* register.htm */; };
+		999691EA1E0CD61D00DD4395 /* MyAccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999691E91E0CD61D00DD4395 /* MyAccountTableViewController.m */; };
 		C328FDFF1E09259B00F541FA /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328FDFE1E09259B00F541FA /* AFNetworking.framework */; };
 		C328FE021E09282F00F541FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C328FE011E09282F00F541FA /* Assets.xcassets */; };
 		C328FE041E0928D000F541FA /* XXXXXXXXXXX.png in Resources */ = {isa = PBXBuildFile; fileRef = C328FE031E0928D000F541FA /* XXXXXXXXXXX.png */; };
@@ -76,6 +78,9 @@
 		9969969B1E0A257C00CEF850 /* XXColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXColor.m; sourceTree = "<group>"; };
 		9969969E1E0A2F7200CEF850 /* VVNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VVNetWorkTool.h; path = VVNetWork/VVNetWorkTool.h; sourceTree = "<group>"; };
 		9969969F1E0A2F7200CEF850 /* VVNetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VVNetWorkTool.m; path = VVNetWork/VVNetWorkTool.m; sourceTree = "<group>"; };
+		999691E61E0CB99200DD4395 /* register.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = register.htm; path = ResWebView/register.htm; sourceTree = "<group>"; };
+		999691E81E0CD61D00DD4395 /* MyAccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccountTableViewController.h; sourceTree = "<group>"; };
+		999691E91E0CD61D00DD4395 /* MyAccountTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccountTableViewController.m; sourceTree = "<group>"; };
 		9BBAB3B4865752B3E365A667 /* Pods_mingjieloan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mingjieloan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C328FDFE1E09259B00F541FA /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../Library/Developer/Xcode/DerivedData/mingjieloan-cawitpiheydtebhjjrcuuarlexvl/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
 		C328FE011E09282F00F541FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -211,6 +216,7 @@
 			name = VVNetWork;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		C3462C271E0CFC5B004B20F3 /* JGProgeressHUDCa */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +224,14 @@
 				C3462C291E0CFECB004B20F3 /* JGProgressHUD+Add.m */,
 			);
 			name = JGProgeressHUDCa;
+=======
+		999691E51E0CB94500DD4395 /* ResWebView */ = {
+			isa = PBXGroup;
+			children = (
+				999691E61E0CB99200DD4395 /* register.htm */,
+			);
+			name = ResWebView;
+>>>>>>> aee9f5d068bb4411a4a49e2008d4666e5ca84823
 			sourceTree = "<group>";
 		};
 		C34FFE831E0914C900FF8C05 = {
@@ -324,6 +338,7 @@
 			children = (
 				993422811E0A7E01004C8A2B /* Controller */,
 				993422801E0A7DF1004C8A2B /* Model */,
+				999691E51E0CB94500DD4395 /* ResWebView */,
 			);
 			path = "Log&Res";
 			sourceTree = "<group>";
@@ -389,6 +404,8 @@
 			children = (
 				C34FFF181E091E8D00FF8C05 /* MyAccountViewController.h */,
 				C34FFF191E091E8D00FF8C05 /* MyAccountViewController.m */,
+				999691E81E0CD61D00DD4395 /* MyAccountTableViewController.h */,
+				999691E91E0CD61D00DD4395 /* MyAccountTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -573,6 +590,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				999691E71E0CB99200DD4395 /* register.htm in Resources */,
 				C328FE041E0928D000F541FA /* XXXXXXXXXXX.png in Resources */,
 				C34FFF2B1E091E8D00FF8C05 /* Info.plist in Resources */,
 				C328FE021E09282F00F541FA /* Assets.xcassets in Resources */,
@@ -752,6 +770,7 @@
 				9969969C1E0A257C00CEF850 /* XXColor.m in Sources */,
 				996996A01E0A2F7200CEF850 /* VVNetWorkTool.m in Sources */,
 				C34FFF311E091E8D00FF8C05 /* ProductCenterViewController.m in Sources */,
+				999691EA1E0CD61D00DD4395 /* MyAccountTableViewController.m in Sources */,
 				993422881E0A7E52004C8A2B /* ForgetViewController.m in Sources */,
 				C34FFF281E091E8D00FF8C05 /* BaseViewController.m in Sources */,
 				9934228A1E0A7E52004C8A2B /* RegisterViewController.m in Sources */,
