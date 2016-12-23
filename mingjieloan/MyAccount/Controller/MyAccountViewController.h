@@ -9,5 +9,7 @@
 #import "BaseViewController.h"
 
 @interface MyAccountViewController : BaseViewController
+@property (strong, nonatomic) UILabel *totalMoneyLabel;//总资产
+@property (strong, nonatomic) UILabel * yqsyLabel;//预期收益
 
 @end
