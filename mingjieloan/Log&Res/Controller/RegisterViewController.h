@@ -14,7 +14,7 @@
 @property (strong, nonatomic) UITextField * duanxinField;
 @property (strong, nonatomic) UITextField * passwordField;
 @property (strong, nonatomic) UITextField * passwordAgainField;
-/** 发生验证码按钮 */
+/** 发送验证码按钮 */
 @property (strong, nonatomic) UIButton * sendYZMButton;
 /** 注册协议按钮 */
 @property (strong, nonatomic) UIButton * registerXYButton;
