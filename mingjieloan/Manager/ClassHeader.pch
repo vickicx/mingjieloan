@@ -29,6 +29,7 @@
 #import "FMDB.h"
 #import "IQKeyboardManager.h"
 #import "JGProgressHUD.h"
+#import "JGProgressHUD+Add.h"
 #import "KKGestureLockView.h"
 #import "Masonry.h"
 #import "MJRefresh.h"

@@ -210,27 +210,33 @@
 }
 
 - (void)registerAccount {
+    
     if (self.passwordField.text == self.passwordAgainField.text) {
-        NSDictionary *dic = @{@"phone":@"18623549649",@"password":self.passwordField.text,@"phoneCode":@"236789",@"captha":@"",@"sid":@""};
-        
-        [VVNetWorkTool postWithUrl:Url(REGISTER) body:dic bodyType:1 httpHeader:nil responseType:2 progress:^(NSProgress *progress) {
+        if ([self.passwordField.text isMatch:[NSRegularExpression regularExpressionWithPattern:@"^\\S{8,}$" options:NSRegularExpressionCaseInsensitive
+                                                        error:nil]])
+        {
+            NSDictionary *dic = @{@"phone":@"18623549649",@"password":self.passwordField.text,@"phoneCode":@"156789",@"captcha":@"",@"sid":@""};
             
-        } success:^(id result) {
-            NSLog(@"%@",result);
+            [VVNetWorkTool postWithUrl:Url(REGISTER) body:dic bodyType:1 httpHeader:nil responseType:0 progress:^(NSProgress *progress) {
+                
+            } success:^(id result) {
+                
+                
+                
+            } fail:^(NSError *error) {
+                
+            }];
             
-        } fail:^(NSError *error) {
-            
-        }];
+        } else {
+            [JGProgressHUD showSuccess:@"两次密码不相同" inView:self.view];
+        }
         
     } else {
-        JGProgressHUD *hud = [[JGProgressHUD alloc] initWithStyle:JGProgressHUDStyleExtraLight];
         
-        hud.textLabel.text = @"请确认两次密码相同并重试";
-        
-        [hud showInView:self.view];
-        
-        [hud dismissAfterDelay:1.5];
     }
+    
+    
+        
     
     
 }

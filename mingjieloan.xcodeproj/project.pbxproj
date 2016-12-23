@@ -19,6 +19,7 @@
 		C328FDFF1E09259B00F541FA /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328FDFE1E09259B00F541FA /* AFNetworking.framework */; };
 		C328FE021E09282F00F541FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C328FE011E09282F00F541FA /* Assets.xcassets */; };
 		C328FE041E0928D000F541FA /* XXXXXXXXXXX.png in Resources */ = {isa = PBXBuildFile; fileRef = C328FE031E0928D000F541FA /* XXXXXXXXXXX.png */; };
+		C3462C2A1E0CFECB004B20F3 /* JGProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = C3462C291E0CFECB004B20F3 /* JGProgressHUD+Add.m */; };
 		C34FFEAA1E0914CA00FF8C05 /* mingjieloanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFEA91E0914CA00FF8C05 /* mingjieloanTests.m */; };
 		C34FFEB51E0914CA00FF8C05 /* mingjieloanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFEB41E0914CA00FF8C05 /* mingjieloanUITests.m */; };
 		C34FFF241E091E8D00FF8C05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FFEF41E091E8D00FF8C05 /* AppDelegate.m */; };
@@ -79,6 +80,8 @@
 		C328FDFE1E09259B00F541FA /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../Library/Developer/Xcode/DerivedData/mingjieloan-cawitpiheydtebhjjrcuuarlexvl/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
 		C328FE011E09282F00F541FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C328FE031E0928D000F541FA /* XXXXXXXXXXX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XXXXXXXXXXX.png; sourceTree = "<group>"; };
+		C3462C281E0CFECB004B20F3 /* JGProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JGProgressHUD+Add.h"; sourceTree = "<group>"; };
+		C3462C291E0CFECB004B20F3 /* JGProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JGProgressHUD+Add.m"; sourceTree = "<group>"; };
 		C34FFE8C1E0914CA00FF8C05 /* mingjieloan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mingjieloan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34FFEA51E0914CA00FF8C05 /* mingjieloanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mingjieloanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34FFEA91E0914CA00FF8C05 /* mingjieloanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mingjieloanTests.m; sourceTree = "<group>"; };
@@ -206,6 +209,15 @@
 				9969969F1E0A2F7200CEF850 /* VVNetWorkTool.m */,
 			);
 			name = VVNetWork;
+			sourceTree = "<group>";
+		};
+		C3462C271E0CFC5B004B20F3 /* JGProgeressHUDCa */ = {
+			isa = PBXGroup;
+			children = (
+				C3462C281E0CFECB004B20F3 /* JGProgressHUD+Add.h */,
+				C3462C291E0CFECB004B20F3 /* JGProgressHUD+Add.m */,
+			);
+			name = JGProgeressHUDCa;
 			sourceTree = "<group>";
 		};
 		C34FFE831E0914C900FF8C05 = {
@@ -439,6 +451,7 @@
 		C34FFF231E091E8D00FF8C05 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				C3462C271E0CFC5B004B20F3 /* JGProgeressHUDCa */,
 				9969969D1E0A2EF400CEF850 /* VVNetWork */,
 				996996991E0A257C00CEF850 /* ZZColor */,
 			);
@@ -729,6 +742,7 @@
 			files = (
 				9934228D1E0A7E75004C8A2B /* LoginUser.m in Sources */,
 				993422931E0A806F004C8A2B /* LoginModel.m in Sources */,
+				C3462C2A1E0CFECB004B20F3 /* JGProgressHUD+Add.m in Sources */,
 				C34FFF291E091E8D00FF8C05 /* SubBaseViewController.m in Sources */,
 				C34FFF2F1E091E8D00FF8C05 /* MoreInfoViewController.m in Sources */,
 				993422961E0A9AA5004C8A2B /* BaseService.m in Sources */,
