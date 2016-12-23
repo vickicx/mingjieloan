@@ -33,15 +33,15 @@
 //    grayLineView.backgroundColor = [UIColor grayColor];
 //    [self.view addSubview:grayLineView];
     
-    UIImageView *imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(30*FitWidth, 88.5*FitHeight, 13*FitWidth, 20*FitHeight)];
+    UIImageView *imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(30*FitWidth, 109*FitHeight, 13*FitWidth, 20*FitHeight)];
     imageView1.image = [UIImage imageNamed:@"shoujihao"];
     [self.view addSubview:imageView1];
     
 
     
-    self.nameField = [[UITextField alloc] initWithFrame:CGRectMake(54*FitWidth, 89*FitHeight, self.view.width - 160*FitWidth, 20*FitHeight)];
+    self.nameField = [[UITextField alloc] initWithFrame:CGRectMake(54*FitWidth, 109*FitHeight, self.view.width - 160*FitWidth, 20*FitHeight)];
     self.nameField.placeholder = @"请填写手机号";
-
+    self.nameField.keyboardType = UIKeyboardTypePhonePad;
     self.nameField.borderStyle = UITextBorderStyleNone;
     [self.view addSubview:self.nameField];
     
@@ -64,10 +64,14 @@
     self.sendYZMButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
     [self.sendYZMButton setTitle:@"发送验证码" forState:UIControlStateNormal];
     [self.sendYZMButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.sendYZMButton.titleLabel.font = [UIFont systemFontOfSize:RealValue(18)];
+    self.sendYZMButton.titleLabel.font = [UIFont systemFontOfSize:RealValue(14)];
     
     self.sendYZMButton.backgroundColor = [XXColor btnGoldenColor];
+<<<<<<< HEAD
     self.sendYZMButton.layer.cornerRadius = 20*FitWidth;
+=======
+    self.sendYZMButton.layer.cornerRadius = 20*FitHeight;
+>>>>>>> 012e7dda316457d041ef636364495743aac34f94
     [self.view addSubview:self.sendYZMButton];
     
     
@@ -101,6 +105,8 @@
     self.passwordAgainField.placeholder = @"请再次输入密码";
     self.passwordAgainField.secureTextEntry = YES;
     [self.view addSubview:self.passwordAgainField];
+    
+    self.nameField.font = self.duanxinField.font = self.passwordField.font = self.passwordAgainField.font = RealFont(14);
     
     UIView *grayLineView4 = [[UIView alloc] initWithFrame:CGRectMake(self.nameField.left - 2 *FitWidth ,self.passwordAgainField.bottom + 5 *FitHeight, 323*FitWidth, FitHeight)];
     grayLineView4.backgroundColor = [UIColor lightGrayColor];
@@ -140,17 +146,107 @@
 }
 
 - (void)sendYZMButton:(UIButton *)button {
-    
+    [self getCode];
+//    if (self.nameField.text.length == 11) {
+//        [self getCode];
+//        
+//        __block int timeOut = 60;
+//        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//        dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,queue);
+//        dispatch_source_set_timer(_timer,dispatch_walltime(NULL, 0),1.0*NSEC_PER_SEC, 0); //每秒执行
+//        dispatch_source_set_event_handler(_timer, ^{
+//            if(timeOut<=0){ //倒计时结束，关闭
+//                dispatch_source_cancel(_timer);
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    //设置界面的按钮显示 根据自己需求设置
+//                    self.sendYZMButton.titleLabel.font = [UIFont systemFontOfSize:RealValue(14)];
+//                    [self.sendYZMButton setTitle:@"获取验证码" forState:UIControlStateNormal];
+//                    self.sendYZMButton.userInteractionEnabled = YES;
+//                });
+//            }else{
+//                int seconds = timeOut % 61;
+//                NSString *strTime = [NSString stringWithFormat:@"%.2d", seconds];
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    //设置界面的按钮显示 根据自己需求设置
+//                    //NSLog(@"____%@",strTime);
+//                    [UIView beginAnimations:nil context:nil];
+//                    [UIView setAnimationDuration:1];
+//                    self.sendYZMButton.titleLabel.font = [UIFont systemFontOfSize:RealValue(12)];
+//                    [self.sendYZMButton setTitle:[NSString stringWithFormat:@"%@秒后发送",strTime] forState:UIControlStateNormal];
+//                    [UIView commitAnimations];
+//                    self.sendYZMButton.userInteractionEnabled = NO;
+//                });
+//                timeOut--;
+//            }
+//        });
+//        dispatch_resume(_timer);
+//    } else {
+//        JGProgressHUD *hud = [[JGProgressHUD alloc] initWithStyle:JGProgressHUDStyleExtraLight];
+//        hud.textLabel.text = @"请输入正确的手机号";
+//        [hud showInView:self.view];
+//        [hud dismissAfterDelay:1.5];
+//    }
 }
+    
 
 -(void)registerXYButton:(UIButton *)button {
     
 }
 
 -(void)registerButton:(UIButton *)button{
+    [self registerAccount];
+}
+
+- (void)getCode {
+    
+    JGProgressHUD *hud = [[JGProgressHUD alloc] initWithStyle:JGProgressHUDStyleExtraLight];
+    
+    hud.textLabel.text = @"正在发送短信";
+    
+    [hud showInView:self.view];
+    NSDictionary *dic = @{@"sid":@"",@"phone":@"18623549649",@"captcha":@""};
+    [VVNetWorkTool postWithUrl:Url(SENDCODE) body:dic bodyType:1 httpHeader:nil responseType:0 progress:^(NSProgress *progress) {
+        
+    } success:^(id result) {
+        hud.textLabel.text = result[@"msg"];
+        [hud dismissAfterDelay:0.3];
+    } fail:^(NSError *error) {
+        
+    }];
+}
+
+- (void)registerAccount {
+    if (self.passwordField.text == self.passwordAgainField.text) {
+        NSDictionary *dic = @{@"phone":@"18623549649",@"password":self.passwordField.text,@"phoneCode":@"236789",@"captha":@"",@"sid":@""};
+        
+        [VVNetWorkTool postWithUrl:Url(REGISTER) body:dic bodyType:1 httpHeader:nil responseType:2 progress:^(NSProgress *progress) {
+            
+        } success:^(id result) {
+            NSLog(@"%@",result);
+            
+        } fail:^(NSError *error) {
+            
+        }];
+        
+    } else {
+        JGProgressHUD *hud = [[JGProgressHUD alloc] initWithStyle:JGProgressHUDStyleExtraLight];
+        
+        hud.textLabel.text = @"请确认两次密码相同并重试";
+        
+        [hud showInView:self.view];
+        
+        [hud dismissAfterDelay:1.5];
+    }
+    
     
 }
 
+
+//"phone" : phone,
+//"password" : password,
+//"phoneCode": phoneCode,
+//"captcha" : captcha == nil ? "" : captcha!,//图片验证码,单个客户端注册超过4次需要验证码
+//"sid" : ""
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

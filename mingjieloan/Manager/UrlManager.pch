@@ -25,7 +25,7 @@
 
 #define Host @"http://www.dlmjcf.com/mapp"
 #define TestHost @"http://www.dlmjcf.com"
-#define Url(string) [NSString stringWithFormat:@"%@/%@", Host, string]
+#define Url(string) [NSString stringWithFormat:@"%@%@", Host, string]
 
 //发布的正式地址
 #define HOSTURL @"http://www.dlmjcf.com/mapp"

@@ -11,7 +11,7 @@
 #import "ForgetViewController.h"
 #import "BaseService.h"
 
-@interface LoginViewController ()
+@interface LoginViewController ()<JGProgressHUDDelegate>
 
 @property (strong, nonatomic) UIImageView * codeImageView;
 @property (strong, nonatomic) UITextField * codeField;
@@ -31,6 +31,8 @@
     [self.navigationController.navigationBar setTitleTextAttributes:@{ NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     [self.navigationController.navigationBar setBarTintColor:[XXColor labGoldenColor]];
+    
+    
     [self createView];
 
     // Do any additional setup after loading the view.
@@ -168,12 +170,19 @@
     
     // [NSString stringWithFormat:@"iOS%@",[NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"]]
     
+    JGProgressHUD *hud = [[JGProgressHUD alloc] initWithStyle:JGProgressHUDStyleExtraLight];
+    
+    hud.textLabel.text = @"登录中...";
+    
+    [hud showInView:self.view];
+    
     NSDictionary *dic = @{@"account":self.nameField.text,@"passwd":self.passwordField.text,@"loginVersionName":@"iOS1.2",@"captcha":self.codeField.text,@"sid":@""};
     
-    [VVNetWorkTool postWithUrl:@"http://www.dlmjcf.com/mapp/login/noOauth" body:dic bodyType:1 httpHeader:nil responseType:0 progress:^(NSProgress *progress) {
+    [VVNetWorkTool postWithUrl:Url(LOGIN) body:dic bodyType:1 httpHeader:nil responseType:0 progress:^(NSProgress *progress) {
         
     } success:^(id result) {
         if (result) {
+            [hud dismiss];
             // 储存用户的信息
             [[NSUserDefaults standardUserDefaults] setObject:result[@"body"][@"sid"] forKey:@"sid"];
             if ([result[@"status"] integerValue] == 0) {
@@ -204,17 +213,21 @@
         }
         
     } fail:^(NSError *error) {
-//        ResponseRrrorMessageString(network);
+        [hud dismiss];
     }];
 }
 
 - (void)getCaptchaWithWarning:(NSString *)warningStr {
-    NSDictionary *dic = @{@"sid":MySid};
+    JGProgressHUD *hud = [[JGProgressHUD alloc] initWithStyle:JGProgressHUDStyleExtraLight];
     
+    hud.textLabel.text = @"正在获取验证码...";
+    
+    [hud showInView:self.view];
+    NSDictionary *dic = @{@"sid":MySid};
     [VVNetWorkTool postWithUrl:Url(CAPTCHA) body:dic bodyType:1 httpHeader:nil responseType:ResponseTypeDATA progress:^(NSProgress *progress) {
         
     } success:^(id result) {
-        
+        [hud dismiss];
         UIImage *codeImage          = [UIImage imageWithData:result];
         self.codeImageView.image    = codeImage;
         self.codeImageView.hidden   = NO;
@@ -229,7 +242,7 @@
         self.registerButton.frame   = CGRectMake(self.longinButton.left, self.longinButton.bottom + 15*FitHeight, self.registerButton.width, self.registerButton.height);
         
     } fail:^(NSError *error) {
-        
+        [hud dismiss];
     }];
 }
 
