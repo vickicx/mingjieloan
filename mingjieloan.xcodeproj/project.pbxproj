@@ -76,6 +76,9 @@
 		9969969B1E0A257C00CEF850 /* XXColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXColor.m; sourceTree = "<group>"; };
 		9969969E1E0A2F7200CEF850 /* VVNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VVNetWorkTool.h; path = VVNetWork/VVNetWorkTool.h; sourceTree = "<group>"; };
 		9969969F1E0A2F7200CEF850 /* VVNetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VVNetWorkTool.m; path = VVNetWork/VVNetWorkTool.m; sourceTree = "<group>"; };
+		999691E61E0CB99200DD4395 /* register.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = register.htm; path = ResWebView/register.htm; sourceTree = "<group>"; };
+		999691E81E0CD61D00DD4395 /* MyAccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccountTableViewController.h; sourceTree = "<group>"; };
+		999691E91E0CD61D00DD4395 /* MyAccountTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccountTableViewController.m; sourceTree = "<group>"; };
 		9BBAB3B4865752B3E365A667 /* Pods_mingjieloan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mingjieloan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C328FDFE1E09259B00F541FA /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../Library/Developer/Xcode/DerivedData/mingjieloan-cawitpiheydtebhjjrcuuarlexvl/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
 		C328FE011E09282F00F541FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
